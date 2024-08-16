@@ -1,0 +1,49 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto;
+  background: #FFFFFF;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  color: #3366FF;
+  width:691px;
+  border-right: 1.6px solid rgba(226, 192, 68,.8);
+  animation: Typing 3.48s steps(47, end) infinite alternate,
+    Bar 1s step-end infinite;
+  
+}
+
+@keyframes Typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes Bar {
+  0% {
+     border-right: 1.6px solid rgba(226, 192, 68,0);
+  }
+  50% {
+     border-right: 1.6px solid rgba(226, 192, 68,.8);
+  }
+  100% {
+      border-right: 1.6px solid rgba(226, 192, 68,0);
+  }
+}
